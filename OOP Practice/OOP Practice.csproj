@@ -56,6 +56,42 @@
     <Compile Include="formList.Designer.cs">
       <DependentUpon>formList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Groups\Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\Brand.Designer.cs">
+      <DependentUpon>Brand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Items\Create_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Items\Create_Items.Designer.cs">
+      <DependentUpon>Create_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Items\View_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Items\View_items.Designer.cs">
+      <DependentUpon>View_items.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\People\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +115,42 @@
     </Compile>
     <Compile Include="Forms\People\Vendor.Designer.cs">
       <DependentUpon>Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sales\Sale_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sales\Sale_Order.Designer.cs">
+      <DependentUpon>Sale_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sales\Shipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sales\Shipments.Designer.cs">
+      <DependentUpon>Shipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sales\View_Sale_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sales\View_Sale_Order.Designer.cs">
+      <DependentUpon>View_Sale_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Stocks\Create_Stocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Stocks\Create_Stocks.Designer.cs">
+      <DependentUpon>Create_Stocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Stocks\Move_Stocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Stocks\Move_Stocks.Designer.cs">
+      <DependentUpon>Move_Stocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Stocks\View_Stocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Stocks\View_Stocks.Designer.cs">
+      <DependentUpon>View_Stocks.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,11 +180,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Groups\" />
-    <Folder Include="Forms\Items\" />
-    <Folder Include="Forms\Sales\" />
     <Folder Include="Forms\Settings\" />
-    <Folder Include="Forms\Stocks\" />
     <Folder Include="Queries\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
