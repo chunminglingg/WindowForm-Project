@@ -16,7 +16,7 @@ namespace OOP_Practice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formList());
+            Application.Run(new Form1());
         }
     }
 }

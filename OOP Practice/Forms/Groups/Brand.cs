@@ -16,5 +16,10 @@ namespace OOP_Practice.Forms.Groups
         {
             InitializeComponent();
         }
+
+        private void Brand_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

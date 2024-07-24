@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OOP_Practice
+namespace OOP_Practice.Forms.Settings
 {
-    public partial class Form1 : Form
+    public partial class Setting : Form
     {
-        public Form1()
+        public Setting()
         {
             InitializeComponent();
-        }
-
-        private void btn_save_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -35,17 +35,20 @@
             this.lb_des = new System.Windows.Forms.Label();
             this.lb_floor = new System.Windows.Forms.Label();
             this.lb_name = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(314, 277);
+            this.btn_save.Location = new System.Drawing.Point(264, 280);
             this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(105, 34);
             this.btn_save.TabIndex = 10;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // txt_des
             // 
@@ -102,11 +105,22 @@
             this.lb_name.TabIndex = 6;
             this.lb_name.Text = "Name";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(390, 50);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(822, 264);
+            this.dataGridView1.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1224, 600);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.txt_des);
             this.Controls.Add(this.txt_floor);
@@ -116,6 +130,7 @@
             this.Controls.Add(this.lb_name);
             this.Name = "Form1";
             this.Text = "Listing App";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,6 +145,7 @@
         private System.Windows.Forms.Label lb_des;
         private System.Windows.Forms.Label lb_floor;
         private System.Windows.Forms.Label lb_name;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

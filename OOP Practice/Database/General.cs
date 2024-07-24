@@ -8,5 +8,8 @@ namespace OOP_Practice.Database
 {
     internal class General
     {
+        Database.Select Select;
+        Database.Modify Modify;
+        Database.Delete Delete;
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Controllers.cs" />
     <Compile Include="Database\Delete.cs" />
     <Compile Include="Database\General.cs" />
     <Compile Include="Database\Modify.cs" />
@@ -134,6 +135,12 @@
     <Compile Include="Forms\Sales\View_Sale_Order.Designer.cs">
       <DependentUpon>View_Sale_Order.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Settings\Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Stocks\Create_Stocks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,10 +159,21 @@
     <Compile Include="Forms\Stocks\View_Stocks.Designer.cs">
       <DependentUpon>View_Stocks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ConnectionString.cs" />
+    <Compile Include="Model\Queries.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formList.resx">
       <DependentUpon>formList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups\Brand.resx">
+      <DependentUpon>Brand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Items\Create_Items.resx">
+      <DependentUpon>Create_Items.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -179,9 +197,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Settings\" />
-    <Folder Include="Queries\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
